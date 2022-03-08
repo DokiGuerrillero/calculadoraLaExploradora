@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <title>Calculadora</title>
+</head>
+<body>
+    <div class="box">
+        <h1>Calculator 💫</h1>
+        <div class="principal">
+            <div class="screen">
+                <p></p>
+            </div>
+            <div class="contBox">
+                <div class="number">
+                    <input type="button" onclick="putInput('1')" value="1">
+                    <input type="button" onclick="putInput('2')" value="2">
+                    <input type="button" onclick="putInput('3')" value="3">
+                    <input type="button" onclick="putInput('4')" value="4">
+                    <input type="button" onclick="putInput('5')" value="5">
+                    <input type="button" onclick="putInput('6')" value="6">
+                    <input type="button" onclick="putInput('7')" value="7">
+                    <input type="button" onclick="putInput('8')" value="8">
+                    <input type="button" onclick="putInput('9')" value="9">
+                    <input type="button" onclick="if(compDot() != true) {putInput('.')}" value=".">
+                    <input type="button" onclick="putInput('0')" value="0">
+                    <input type="button" onclick="changeSign(master)" value="±">
+                </div>
+                <div class="operations">
+                    <input type="button" onclick="selector(1,master)" value="+">
+                    <input type="button" onclick="selector(2,master)" value="-">
+                    <input type="button" onclick="selector(3,master)" value="/">
+                    <input type="button" onclick="selector(4,master)" value="*">
+                    <input type="button" onclick="selector(5,master)" value="^">
+                    <input type="button" onclick="master.control=1;putInput(''); selector(6,master)" value="√">
+                    <input type="button" onclick="rmv(master)" value="←">
+                    <input type="button" onclick="CE(master)" value="CE">
+                    <input type="button" onclick="compute(master)" value="=">
+                </div>
+            </div>
+        </div>
+    </div>
+    <footer>
+        <h3>Odin's Project</h3>
+        <p>And we should be done with it</p>
+    </footer>
+</body>
+<script src="./script.js"></script>
+</html>
